@@ -1,4 +1,4 @@
-@import url('https://rsms.me/inter/inter.css');
+@import url('https://rsms.me/inter/inter.css'); /* Font import*/
 @supports (font-variation-settings: normal) {
   html { font-family: 'Inter var', sans-serif; }
 }
@@ -18,12 +18,12 @@ body, html {
     cursor: default;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection { /* For Firefox */
   color: rgb(250, 250, 250);
   background: rgb(14, 14, 14);
 }
 
-::selection {
+::selection { /* For Chrome, etc... */
   color: rgb(250, 250, 250);
   background: rgb(14, 14, 14);
 }
