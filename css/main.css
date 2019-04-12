@@ -23,6 +23,26 @@ body, html {
     margin-left: 10%;
 }
 
+.copyright {
+    color: rgba(14, 14, 14, 0.350);
+    font-size: 50%;
+    cursor: default;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none; 
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    left: calc(50% - 122px / 2);
+    bottom: 5%;
+}
+
 ::-moz-selection { /* For Firefox */
   color: rgb(250, 250, 250);
   background: rgb(14, 14, 14);
