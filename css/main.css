@@ -1,11 +1,10 @@
+@import url(animista.css);
 @import url('https://rsms.me/inter/inter.css'); /* Font import*/
 @supports (font-variation-settings: normal) {
   html { font-family: 'Inter var', sans-serif; }
 }
 
 body, html {
-    padding: none;
-    margin: none;
     background: rgb(252, 252, 252);
     font-family: 'Inter', sans-serif;
     color: rgb(14, 14, 14);
@@ -13,9 +12,15 @@ body, html {
 
 .title {
     font-size: 400%;
-    text-align: center;
     font-weight: 400;
     cursor: default;
+    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+	        animation: slide-in-left 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+}
+
+.container{
+    margin-top: calc(50vh - 77px / 2);
+    margin-left: 10%;
 }
 
 ::-moz-selection { /* For Firefox */
