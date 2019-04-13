@@ -1,46 +1,105 @@
 @import url(animista.css);
+@import url(snackbar.css);
 @import url('https://rsms.me/inter/inter.css'); /* Font import*/
 @supports (font-variation-settings: normal) {
   html { font-family: 'Inter var', sans-serif; }
 }
 
 body, html {
-    background: rgb(252, 252, 252);
-    font-family: 'Inter', sans-serif;
-    color: rgb(14, 14, 14);
+  background: rgb(252, 252, 252);
+  font-family: 'Inter', sans-serif;
+  color: rgb(14, 14, 14);
 }
 
 .title {
-    font-size: 400%;
-    font-weight: 400;
-    cursor: default;
-    -webkit-animation: slide-in-left 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
-	        animation: slide-in-left 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+  font-size: 400%;
+  font-weight: 400;
+  cursor: default;
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) 0.2s both;
+	animation: slide-in-left 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) 0.2s both;
 }
 
 .container{
-    margin-top: calc(50vh - 77px / 2);
-    margin-left: 10%;
+  margin-top: calc(50vh - 77px / 2);
+  margin-left: 10%;
+}
+
+.earth{
+  position: fixed;
+  bottom: calc(50vh - 1050px / 2);
+  text-align: right;
+  right: 15%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; 
+}
+
+.earthimg {
+  width: 700%;
+  height: 700%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) 0.1s both;
+	animation: slide-in-right 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) 0.1s both;
+}
+
+@media screen and (max-width: 992px) {
+  .earthimg {
+  width: 700%;
+  height: 700%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) 0.1s both;
+	animation: slide-in-right 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) 0.1s both;
+
+}
+  .earth{
+  position: fixed;
+  bottom: calc(50vh - 1050px / 2);
+  text-align: right;
+  right: 5%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; 
+}
+  .title {
+  width: 100px;
+  font-size: 300%;
+  font-weight: 400;
+  cursor: default;
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) 0.2s both;
+	animation: slide-in-left 0.5s cubic-bezier(0.165, 0.840, 0.440, 1.000) 0.2s both;
+}
 }
 
 .copyright {
-    color: rgba(14, 14, 14, 0.350);
-    font-size: 50%;
-    cursor: default;
-    user-select: none;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none; 
+  color: rgba(14, 14, 14, 0.350);
+  font-size: 50%;
+  cursor: default;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none; 
 }
 
 .footer {
-    position: fixed;
-    bottom: 0;
-    text-align: center;
-    left: calc(50% - 122px / 2);
-    bottom: 5%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  left: calc(50% - 122px / 2);
+  bottom: 5%;
 }
 
 ::-moz-selection { /* For Firefox */
